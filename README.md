@@ -1,5 +1,7 @@
 # Xeno's Python Projects
 
+[![HitCount](http://hits.dwyl.com/xenophilicy/python-stuff.svg)](http://hits.dwyl.com/xenophilicy/python-stuff)
+
 Current categories:
 
 * Chemistry
