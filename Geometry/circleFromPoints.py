@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-import ImageDraw
-import Image
+from PIL import ImageDraw
+from PIL import Image
 import math
 import time
 import sys

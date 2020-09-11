@@ -1,11 +1,15 @@
+import sys
+import time
+
 from pynput.keyboard import Key, Controller as KController
-from pynput.mouse import Button, Controller as MController
-from tkinter import Tk
-import time, sys
+from pynput.mouse import Controller as MController
+
 
 def hit(key):
     keyboard.press(key)
+    time.sleep(.1)
     keyboard.release(key)
+
 
 delay = 0
 
@@ -15,16 +19,17 @@ mouse = MController()
 count = int(input("How many messages would you like deleted?\n>>"))
 
 print("Select the window now...")
-for i in range(-5,0):
+for i in range(-5, 0):
     sys.stdout.write(f"\rWaiting {-i} seconds...")
     time.sleep(1)
 sys.stdout.write(f"\rOkay, deleting {count} messages...\n")
-
+total = 0
 before = time.time()
-for i in range(1,count+1):
+for i in range(1, count + 1):
     start = time.time()
     hit(Key.enter)
     hit(Key.backspace)
+    time.sleep(.1)
     hit(Key.up)
     time.sleep(.1)
     keyboard.press(Key.ctrl)
@@ -34,13 +39,14 @@ for i in range(1,count+1):
     hit(Key.enter)
     time.sleep(.1)
     hit(Key.enter)
-    time.sleep(.2)
-    delta = (time.time()-start)*1000
+    delta = (time.time() - start) * 1000
     delay += delta
     print(f"\rFinished pass #{i}")
-after = round((time.time()-before),2)
-perPass = round(delay/count,2)
+    total += 1
+after = round((time.time() - before), 2)
+perPass = round(delay / count, 2)
 
-print(f"Deleted {i} message(s)!")
+print(f"Deleted {total} message(s)!")
 print(f"Average pass: {perPass} ms")
 print(f"Total duration: {after} seconds")
+input("Press enter to close")

@@ -1,11 +1,11 @@
 # Xeno's Python Projects
 
-[![HitCount](http://hits.dwyl.com/xenophilicy/python-stuff.svg)](http://hits.dwyl.com/xenophilicy/python-stuff)
+[![HitCount](http://hits.xenoservers.net:4000/Xenophilicy/python-stuff.svg)](http://hits.xenoservers.net:4000/)
 
 Current categories:
 
 * Chemistry
-    - Electron configuration calculator ([electronConfigCalc.py](https://github.com/Xenophilicy/python-stuff/blob/master/Chemistry/electronConfigCalc.py))
+    - Electron configuration calculator [electronConfigCalc.py](https://github.com/Xenophilicy/python-stuff/blob/master/Chemistry/electronConfigCalc.py)
 
 * Discord
     - Automatic message delete [deleteMessages.py](https://github.com/Xenophilicy/python-stuff/blob/master/Discord/deleteMessages.py)
