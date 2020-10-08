@@ -59,3 +59,5 @@ for i in range(1,16):
     bStack.append(b)
     print(f"Pass {i} | A: {a} B: {b} (Net: {diffA-diffB})")
 plot("Part 3", 120, aStack, bStack, "part3")
+
+input("Done.")

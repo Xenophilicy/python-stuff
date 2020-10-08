@@ -201,3 +201,5 @@ delta = formatTime(fm[0],fm[1],fm[2],fm[3])
 print(f"Entire process took {processDelta} ms ({delta})")
 
 #image.show()
+
+input("Press any key to exit the generator")

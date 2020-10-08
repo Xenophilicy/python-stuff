@@ -38,3 +38,5 @@ else:
   print(f"Name: {elementNames[requestNum]}")
   print(f"Symbol: {symbolList[requestNum]}")
   print(f"Electron Configuration: {electronString}")
+
+  input("Press any key to escape the calculator")

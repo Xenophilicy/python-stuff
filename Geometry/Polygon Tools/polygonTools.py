@@ -1,7 +1,7 @@
 import math
-import ImageDraw
-import Image
-import ImageFont
+from PIL import ImageDraw
+from PIL import Image
+from PIL import ImageFont
 
 prefixes = {
     3:"Triangle",
