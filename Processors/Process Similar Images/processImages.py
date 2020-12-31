@@ -1,6 +1,6 @@
-import Image
+from PIL import Image
 from multiprocessing import Process,Manager
-import ImageChops
+from PIL import ImageChops
 import os
 import time
 

@@ -25,8 +25,9 @@ for i in range(-5, 0):
 sys.stdout.write(f"\rOkay, deleting {count} messages...\n")
 total = 0
 before = time.time()
-for i in range(1, count + 1):
+while total != count:
     start = time.time()
+    time.sleep(.1)
     hit(Key.enter)
     hit(Key.backspace)
     time.sleep(.1)
@@ -37,12 +38,12 @@ for i in range(1, count + 1):
     keyboard.release(Key.ctrl)
     hit(Key.backspace)
     hit(Key.enter)
-    time.sleep(.1)
+    time.sleep(.2)
     hit(Key.enter)
     delta = (time.time() - start) * 1000
     delay += delta
-    print(f"\rFinished pass #{i}")
     total += 1
+    print(f"\rFinished pass #{total}")
 after = round((time.time() - before), 2)
 perPass = round(delay / count, 2)
 
